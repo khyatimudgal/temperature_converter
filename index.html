@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="temp_converter.css">
+  </head>
+
+  <body>
+    <h1>Temperature Converter</h1>
+
+    <div class="converter-card">
+      <input type="number" id="inputTemp" placeholder="Enter temperature">
+
+      <div class="unit-row">
+        <select id="fromUnit">
+          <option value="" disabled selected>Choose unit</option>
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+
+        <span class="arrow">→</span>
+
+        <select id="toUnit">
+          <option value="" disabled selected>Choose unit</option>
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </div>
+
+      <button onclick="convert()">Convert</button>
+
+      <div id="result"></div>
+    </div>
+  </body>
+
+  <script src="temp_converter.js"></script>
+</html>
